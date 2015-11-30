@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'tags/index'
+  root 'tags#index'
   get '/tags' =>'tags#index'
   get 'tags/:id' => 'tags#show', as: :tag
   get 'destinations/:id' => 'destinations#show', as: :destination
